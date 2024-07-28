@@ -12,7 +12,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/register', { email, username, password });
+      await axios.post('https://redsoftware-backend.onrender.com/register', { email, username, password });
       navigate('/login');
     } catch (error) {
       alert('Registration failed');

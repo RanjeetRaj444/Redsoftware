@@ -16,7 +16,7 @@ const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await axios.post('http://localhost:5000/login', { email, password });
+      const response = await axios.post('https://redsoftware-backend.onrender.com/login', { email, password });
       setAuth(response.data);
       localStorage.setItem('user', JSON.stringify(response.data));
     } catch (error) {

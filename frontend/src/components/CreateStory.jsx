@@ -13,7 +13,7 @@ const CreateStory = () => {
   const handleCreateStory = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/stories', {
+      await axios.post('https://redsoftware-backend.onrender.com/stories', {
         title,
         firstSentence,
         maxContributions,

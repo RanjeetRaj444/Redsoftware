@@ -12,12 +12,12 @@ const Story = () => {
 
   useEffect(() => {
     const fetchStory = async () => {
-      const response = await axios.get(`http://localhost:5000/stories/${id}`);
+      const response = await axios.get(`https://redsoftware-backend.onrender.com/stories/${id}`);
       setStory(response.data);
     };
 
     const fetchContributions = async () => {
-      const response = await axios.get(`http://localhost:5000/contributions?storyId=${id}`);
+      const response = await axios.get(`https://redsoftware-backend.onrender.com/contributions?storyId=${id}`);
       setContributions(response.data);
     };
 
@@ -28,7 +28,7 @@ const Story = () => {
   const handleAddContribution = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/contributions', {
+      const response = await axios.post('https://redsoftware-backend.onrender.com/contributions', {
         storyId: id,
         authorId: user.id,
         text: newContribution,

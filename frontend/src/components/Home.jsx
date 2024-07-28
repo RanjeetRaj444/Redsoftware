@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchStories = async () => {
-      const response = await axios.get('http://localhost:5000/stories');
+      const response = await axios.get('https://redsoftware-backend.onrender.com/stories');
       setStories(response.data);
     };
 

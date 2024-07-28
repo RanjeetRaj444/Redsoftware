@@ -25,6 +25,7 @@ Welcome to the Collaborative Storytelling App! This application allows users to 
 ## Technologies Used
 
 - Frontend:
+  Url:-- https://peppy-klepon-d351d3.netlify.app/
 
   - React
   - React Router
@@ -33,7 +34,7 @@ Welcome to the Collaborative Storytelling App! This application allows users to 
   - Plain CSS
 
 - Backend:
-
+  - Url :- https://redsoftware-backend.onrender.com/
   - JSON Server (for mock API and data management)
 
 # Landing Page
