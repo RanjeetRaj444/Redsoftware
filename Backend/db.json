@@ -1,0 +1,13 @@
+{
+    "users": [
+      { "id": 1, "username": "user1", "email": "user1@example.com", "password": "hashedPassword1" },
+      { "id": 2, "username": "user2", "email": "user2@example.com", "password": "hashedPassword2" }
+    ],
+    "stories": [
+      { "id": 1, "title": "A Journey Begins", "firstSentence": "Once upon a time...", "maxContributions": 10, "authorId": 1, "completed": false }
+    ],
+    "contributions": [
+      { "id": 1, "storyId": 1, "authorId": 2, "text": "A brave knight set out on an adventure.", "authorName": "user2" }
+    ]
+  }
+  
